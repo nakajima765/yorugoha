@@ -1,0 +1,124 @@
+/* 🌟 全体のスタイル（背景を派手に！） */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 アプリのタイトル */
+h1 {
+    font-size: 28px;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌟 カード風のデザイン（派手な影とアニメーション） */
+.container {
+    background: white;
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🌟 ホバーでカードがちょっと浮く！ */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* 🌟 夕飯決めボタン（派手なアニメーション追加） */
+button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 ボタンのホバーエフェクト（大きくなって光る！） */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌟 結果の表示（アニメーションつき！） */
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* 🌟 結果が表示されるときのアニメーション */
+#result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🌟 スマホ対応（レスポンシブデザイン） */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+.menu-list h2 {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 🌟 メニュー表（テーブル） */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* 🌟 テーブルのセル */
+td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: white;
+    font-weight: bold;
+}
+
+/* 🌟 抽選されたメニューを強調（JSで追加されるクラス） */
+.selected {
+    background: yellow;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/* 🌟 スマホ用のレイアウト調整 */
+@media (max-width: 480px) {
+    td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
